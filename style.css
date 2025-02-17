@@ -300,127 +300,126 @@ img {
   font-family: var(--font-secondary);
   font-size: var(--h4);
 }
-.designCarol__card small{
+.designCarol__card small {
   font-size: 1.3rem;
 }
 
-.designCarol__details p > span{
+.designCarol__details p > span {
   text-decoration: underline;
 }
 
-
 /* TRADITION */
-.tradition{
- padding: 5rem 0;
+.tradition {
+  padding: 5rem 0;
 }
-.tradition__wrapper{
+.tradition__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 }
-.tradition__item{
+.tradition__item {
   display: flex;
   gap: 3rem;
   align-items: center;
   margin-bottom: 3.5rem;
 }
-.tradition__item img{
+.tradition__item img {
   width: 35rem;
 }
-.tradition__title span{
+.tradition__title span {
   color: var(--clr-secondary);
   font-size: 1.4rem;
   font-weight: 500;
 }
-.tradition__title h4{
+.tradition__title h4 {
   color: var(--clr-primary);
   font-size: var(--h4);
   font-family: var(--font-secondary);
   line-height: 3rem;
 }
-.tradition__title{
+.tradition__title {
   margin-bottom: 2rem;
 }
-.tradition__details small{
+.tradition__details small {
   font-style: 1.3rem;
   color: var(--clr-primary);
   font-family: var(--font-secondary);
   font-style: italic;
 }
-.tradition__details p{
+.tradition__details p {
   margin-top: 1rem;
   color: var(--clr-primary);
 }
-.tradition__right{
-  border-image: url(./IMG/border.png)5 fill;
+.tradition__right {
+  border-image: url(./IMG/border.png) 5 fill;
   height: 67rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.tradition__right small{
+.tradition__right small {
   color: var(--clr-primary);
   font-family: var(--font-secondary);
   font-size: 1.3rem;
 }
-.tradition__right h2{
+.tradition__right h2 {
   color: var(--clr-primary);
   font-family: var(--font-secondary);
   font-size: var(--h2);
   margin: 1rem 0;
 }
-.tradition__info{
-  display:flex;
+.tradition__info {
+  display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 0;
 }
-.tradition__info input{
+.tradition__info input {
   padding: 1rem 2rem;
   outline-color: var(--clr-primary);
 }
-.tradition__info input::placeholder{
+.tradition__info input::placeholder {
   color: var(--clr-primary);
 }
-.tradition__flakes{
+.tradition__flakes {
   color: var(--clr-primary);
   position: relative;
 }
-.flakes-1{
+.flakes-1 {
   position: absolute;
   font-size: 5rem;
   clip-path: rect(30px 50px 90% 0%);
   bottom: 13.5rem;
   right: 10rem;
 }
-.flakes-2{
+.flakes-2 {
   position: absolute;
   font-size: 5rem;
   clip-path: rect(10px 19px 90% 0%);
   top: 30rem;
   left: 13rem;
 }
-.flakes-3{
+.flakes-3 {
   position: absolute;
   font-size: 3rem;
   right: 10rem;
   top: 28rem;
 }
-.flakes-4{
+.flakes-4 {
   position: absolute;
   font-size: 2rem;
   bottom: 10rem;
   right: 10rem;
 }
-.flakes-5{
-   position: absolute;
+.flakes-5 {
+  position: absolute;
   font-size: 2rem;
   right: 10rem;
   bottom: 5rem;
 }
 
-.designCarol__item{
+.designCarol__item {
   border-right: 1px solid rgb(43, 43, 43, 0.1);
   padding: 2rem 3rem;
 }
@@ -431,143 +430,198 @@ img {
   border-radius: 100%;
   color: var(--clr-light);
 }
-.designCarol__item ul p{
+.designCarol__item ul p {
   color: var(--clr-primary);
   font-family: var(--font-secondary);
   line-height: 1.5rem;
 }
-.designCarol__item small{
+.designCarol__item small {
   color: var(--clr-primary);
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-.designCarol__contents{
+.designCarol__contents {
   border-top: 4px solid var(--clr-secondary);
   background-color: var(--clr-light);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.designCarol__item ul{
+.designCarol__item ul {
   display: flex;
   align-items: center;
   gap: 1rem;
   text-align: left;
   margin-bottom: 3rem;
 }
-.designCarol__item ul:last-child{
+.designCarol__item ul:last-child {
   margin-bottom: unset;
 }
-.designCarol__wrappers{
+.designCarol__wrappers {
   background-color: var(--clr-secondary);
   color: var(--clr-light);
   height: 55rem;
   padding: 5rem 7rem;
   position: relative;
   text-align: center;
-}.designCarol__item:last-child{
+}
+.designCarol__item:last-child {
   border-right: unset;
 }
 
 /* DECORATION */
-.decoration{
+.decoration {
   margin-top: 10rem;
   padding-top: 5rem;
 }
-.decoration__wrapper{
+.decoration__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 }
-.decoration__left span{
+.decoration__left span {
   font-size: 1.4rem;
-
 }
-.decoration__left small{
-   font-style: 1.4rem;
-   color: var(--clr-secondary);
-   font-weight: 500;
+.decoration__left small {
+  font-style: 1.4rem;
+  color: var(--clr-secondary);
+  font-weight: 500;
 }
-.decoration__left h4{
+.decoration__left h4 {
   font-size: var(--h4);
   color: var(--clr-primary);
   font-family: var(--font-secondary);
   max-width: 50rem;
- margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-.decoration__left p > span{
+.decoration__left p > span {
   text-decoration: underline;
 }
-.decoration__cards{
+.decoration__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   padding: 5rem 0;
 }
-.decoration__right{
-  margin-top:  0rem;
+.decoration__right {
+  margin-top: 0rem;
 }
-.decoration__right h4{
+.decoration__right h4 {
   font-size: var(--h4);
   margin-bottom: 5rem;
   color: var(--clr-primary);
 }
-.decoration__left{
+.decoration__left {
   border-right: 1px solid rgb(43, 43, 43, 0.1);
   padding-right: 5rem;
 }
-.decoration__left img{
+.decoration__left img {
   border-bottom: 4px solid var(--clr-secondary);
 }
 /* FOOTER */
-.footer{
+.footer {
   background-color: var(--clr-secondary);
   color: var(--clr-light);
   padding: 5rem 0;
 }
-.footer__top{
+.footer__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
 }
-.footer__top h4{
+.footer__top h4 {
   font-size: var(--h4);
   font-family: var(--font-secondary);
 }
-.footer__top p{
+.footer__top p {
   border: 2px solid var(--clr-light);
   padding: 1.5rem;
   border-radius: 50%;
   font-size: 1.3rem;
 }
-.footer__top span{
+.footer__top span {
   text-decoration: underline;
   text-transform: uppercase;
-}.footer__bottom{
+}
+.footer__bottom {
   display: flex;
   gap: 5rem;
 }
 
-.footer__bottom ul:first-child{
+.footer__bottom ul:first-child {
   max-width: 40rem;
 }
 .footer__bottom--a,
- .footer__bottom--b{
-display: flex;
-gap: 5rem;
-}.footer__bottom ul li a{
+.footer__bottom--b {
+  display: flex;
+  gap: 5rem;
+}
+.footer__bottom ul li a {
   color: var(--clr-light);
   text-decoration: underline;
 }
-.footer__bottom  ul li p, 
+.footer__bottom ul li p,
 .footer__bottom--a li:nth-child(2),
- .footer__bottom--b li:nth-child(2){
-margin-top: 3rem;
+.footer__bottom--b li:nth-child(2) {
+  margin-top: 3rem;
+}
+/*  TRADITION PAGE */
+.tradition__Banner {
+  padding: 5rem 0;
+}
+.traditionBanner__wrapper img {
+  width: 45rem;
+}
+.tradtionBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tradition__img {
+  border-bottom: 4px solid var(--clr-secondary);
+}
+.traditionBanner__Cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.traditionBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.traditionBanner__img {
+  margin: 10rem0;
+  width: 30%;
+  margin-left: 65rem;
+}
+.traditionBanner__small {
+  color: var(--clr-secondary);
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+}
 
+.traditionCards__wrapper {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.traditionBanner__wrapper img {
+  width: 45rem;
+}
 
+.traditionBanner h2 {
+  font-size: var(--h2);
+}
+.traditionBanner p{
+  color: var(--clr-secondary);
+}
+
+/* FOODS AND DRINKS */
 
 
 
@@ -641,7 +695,7 @@ margin-top: 3rem;
   transition: all ease-in-out;
   transition-delay: o.5s;
 }
-.btn.bg--green{
+.btn.bg--green {
   background-color: var(--clr-primary);
   color: var(--clr-light);
   font-size: 1.2rem;

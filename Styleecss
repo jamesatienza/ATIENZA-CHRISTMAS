@@ -1,0 +1,22 @@
+.tradition__img{
+   border-bottom: 4px solid var(--clr-secondary);
+}
+.tradition__Banner img{
+    margin: 10rem0;
+    width: 30%;
+    margin-left: 65rem;
+}
+.tradition__Banner small{
+    color: var(--clr-secondary);
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.tradition__Banner{
+    padding: 5rem 0 ;
+}
+.traditionCards__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
