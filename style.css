@@ -171,6 +171,77 @@ img {
   transition: all 0.3 ease;
 }
 
+/* HEADER - MOBILE */
+.header .toggle__menu span{
+  background-color: var(--clr-primary);
+  width: 3rem;
+  height: 0.3rem;
+  display: block;
+  border: 2px solid var(--clr-primary);
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+.header .toggle__menu{
+  display: none;
+}
+@media screen and (max-width: 520px) {
+.header .toggle__menu{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+  .header {
+    position: fixed;
+    background-color: var(--clr-light);
+    width: 100%;
+    z-index: 99;
+  }
+  .header__nav{
+    position: fixed;
+    background-color: var(--clr-light);
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    right: -100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22rem;
+    transform: translateY(-14rem);
+    transition: all 0.5s ease;
+  }
+  .header img{
+    width: 10rem;
+  }
+  .header__nav li a{
+    font-size: 2rem;
+  }
+  .header__nav li a::after{
+    background-color: unset;
+  }
+  .header__nav li a:hover,
+  .header__nav li a.active{
+    color: var(--clr-secondary);
+  }
+  .header__nav.open{
+    right: 0;
+    transition: all 0.5s ease;
+  }
+}
+.toggle__menu.open span:first-child{
+  transform: translate(0, 6px) rotate(225deg);
+  transition: all 0.5s ease;
+}
+.toggle__menu.open span:nth-child(2){
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.toggle__menu.open span:last-child{
+  transform: translate(0, -11.5px) rotate(-225deg);
+  transition: all 0.5s ease;
+}
+
 /* BANNER */
 .banner {
   padding-top: 7rem;
@@ -194,6 +265,21 @@ img {
   margin: 10 rem 0;
   width: 100%;
 }
+
+/* BANNER - MOBILE */
+@media screen and (max-width: 520px){
+  .banner{
+    padding-top: 10rem;
+    height: 50rem;
+  }
+  .banner h1{
+    font-size: var(--h3);
+  }
+}
+
+
+
+
 
 /* HOLIDAY */
 .holiday {
@@ -241,6 +327,32 @@ img {
   padding-right: 5rem;
 }
 
+
+/* HOLIDAY - MOBILE */
+@media screen and (max-width: 520px){
+  .holiday{
+    margin-top: 0;
+  }
+  .holiday__left h2{
+    font-size: var(--h3);
+    line-height: 4rem;
+  }
+  .holiday__cards{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .holiday__wrapper{
+    grid-template-columns: 1fr;
+    gap: unset;
+  }
+  .holiday__left{
+    border-right: unset;
+    padding-right: unset;
+  }
+  .holiday__right{
+    margin-top: 0;
+  }
+}
 /* DESIGN */
 .designCarol {
   padding: 5rem o;
@@ -307,6 +419,36 @@ img {
 .designCarol__details p > span {
   text-decoration: underline;
 }
+
+
+/* DESIGNCAROL - MOBILE */
+@media screen and (max-width:520px){
+  .designCarol{
+    height: unset;
+    margin-top: 0;
+  }
+  .designCarol__left h2{
+    font-size: var(--h2);
+  }
+  .designCarol__content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    display: grid;
+    background-color: unset;
+
+  }
+  .designCarol__wrapper{
+    height: unset;
+  }
+  .designCarol__img {
+display: none;
+  }
+
+.designCarol__card {
+background-color: var(--clr-light);
+}
+}
+
 
 /* TRADITION */
 .tradition {
@@ -469,6 +611,39 @@ img {
   border-right: unset;
 }
 
+/* CAROLS - MOBILE */
+@media screen and (max-width:520px){
+.designCarol__wrappers{
+  height: unset;
+}
+  .designCarol__content{
+grid-template-columns: 1fr;
+gap: 3rem;
+  }
+  .designCarol__item {
+background-color: var(--clr-light);
+}
+}
+
+/* TRADITION - MOBILE */
+@media screen and (max-width:520px){
+  .tradition{
+    margin-top: 0;
+  }
+  .tradition__wrapper {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+.tradition__item {
+  display: grid;
+  gap: 5rem;
+  align-items: center;
+}
+.tradition__item img {
+  width: 100rem;
+}
+}
 /* DECORATION */
 .decoration {
   margin-top: 10rem;
@@ -518,8 +693,34 @@ img {
 .decoration__left img {
   border-bottom: 4px solid var(--clr-secondary);
 }
+
+
+/* DECORATION - MOBILE */
+@media screen and (max-width:520px){
+  .decoration{
+    padding-top: 0;
+  }
+.decoration__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0rem;
+}
+.decor__right h4 {
+  font-size: var(--h4);
+margin-bottom: 1rem;
+}
+.decoration__left{
+  padding: 0;
+}
+.decoration__cards{
+  padding: 3rem;
+}
+}
+
+
+
 /* FOOTER */
-.footer {
+.footer{
   background-color: var(--clr-secondary);
   color: var(--clr-light);
   padding: 5rem 0;
@@ -617,14 +818,70 @@ img {
 .traditionBanner h2 {
   font-size: var(--h2);
 }
-.traditionBanner p{
+.traditionBanner p {
   color: var(--clr-secondary);
 }
 
-/* FOODS AND DRINKS */
+/* TRADITION PAGE - MOBILE */
+@media screen and (max-width:520px){
+  .traditionBanner__wrapper h2{
+    font-size: var(--h3);
+  }
+  .traditionBanner{
+    padding-top: 15rem;
+  }
+}
+/* CAROLS PAGE - MOBILE */
+@media screen and (max-width:520px){
+  .traditionBanner{
+    padding-top: 15rem;
+  }
+  .traditionBanner__wrapper h2{
+    font-size: var(--h3);
+  }
+}
+/* FOOD PAGE - MOBILE */
+@media screen and (max-width:520px){
+  .traditionBanner{
+    padding-top: 15rem;
+  }
+  .traditionBanner__wrapper h2{
+    font-size: var(--h3);
+  }
+}
+/* DECORATION PAGE - MOBILE */
+@media screen and (max-width:520px){
+  .traditionBanner{
+    padding-top: 15rem;
+  }
+  .traditionBanner__wrapper h2{
+    font-size: var(--h3);
+  }
+}
+/* CAROLS PAGE - MOBILE */
+@media screen and (max-width:520px){
+  .traditionBanner{
+    padding-top: 15rem;
+  }
+  .traditionBanner__wrapper h2{
+    font-size: var(--h3);
+  }
+}
 
+/* FOOTER MOBILE */
+@media screen and (max-width:520px){
+.footer__bottom{
+  display: grid;
+  grid-template-columns: 2fr;
+}
+}
 
-
+  
+  
+/* TRADITIONS - MOBILE */
+.traditionCards__wrapper{
+  grid-template-columns: 1fr;
+}
 /* REPEATABLE PATTERN */
 .cards img {
   border-bottom: 4px solid var(--clr-secondary);
